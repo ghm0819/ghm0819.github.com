@@ -60,13 +60,15 @@ From July 2020 to July 2021, I worked as a **Senior Algorithm Engineer** in **IA
 
 + [17] Q. Qiu, S. Zhang, **H. Gao**, H. Yang, H. Ying, W. Wang, and X. He. EMVP: Embracing visual foundation model for visual place recognition with centroid-free probing, ***Advances in Neural Information Processing Systems(NeurIPS)***, 2024, 37: 120928-120950.
 
-+ [18] 周光召,苑晶\*,**高海明**,孙沁璇,张雪波,俞诗卓.结构化环境下基于结构单元软编码的3维激光雷达点云描述子[J]. **机器人**,2020,42(06):641-650. [[论文](https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44YLTlOAiTRKibYlV5Vjs7i8oRR1PAr7RxjuAJk4dHXonRMFKNxjDxoxdhVwbsDLApY-eqH6_JAUvftlY0adeN-&uniplatform=NZKPT)]
++ [18] Y. Zhu, W. Lu, G. Ren, **H. Gao**, S. Vougioukas, Y. Ying, and C. Peng. Optimal scheduling of a dual-arm robot for efficient strawberry harvesting in plant factories, ***2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)***, pp. 1231-1238, 2025.  [[paper](https://ieeexplore.ieee.org/document/11246934)]
 
-+ [19] J. Song, **H. Gao**, X. Zhang\*, W. Lin, and J. Liu. A global localization algorithm for mobile robots based on grid submaps, ***IEEE International Conference on Advanced Robotics and Mechatronics***, pp. 201-206, 2018. (**Best Conference Paper Finalist**) [[paper](https://ieeexplore.ieee.org/document/8610874)]
++ [19] 周光召,苑晶\*,**高海明**,孙沁璇,张雪波,俞诗卓.结构化环境下基于结构单元软编码的3维激光雷达点云描述子[J]. **机器人**,2020,42(06):641-650. [[论文](https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44YLTlOAiTRKibYlV5Vjs7i8oRR1PAr7RxjuAJk4dHXonRMFKNxjDxoxdhVwbsDLApY-eqH6_JAUvftlY0adeN-&uniplatform=NZKPT)]
 
-+ [20]  J. Wen, X. Zhang\*, **H. Gao**, J. Yuan, and Y. Fang. A novel 2D laser scan matching algorithm for mobile robots based on hybrid features, ***IEEE International Conference on Real-time Computing and Robotics***, pp. 366-371, 2018. (**Finalist for the Best Paper Award**) [[paper](https://ieeexplore.ieee.org/document/8621744)]
++ [20] J. Song, **H. Gao**, X. Zhang\*, W. Lin, and J. Liu. A global localization algorithm for mobile robots based on grid submaps, ***IEEE International Conference on Advanced Robotics and Mechatronics***, pp. 201-206, 2018. (**Best Conference Paper Finalist**) [[paper](https://ieeexplore.ieee.org/document/8610874)]
 
-+ [21] J. Wang, X. Zhang\*, **H. Gao**, and Y. Fang. Time-optimal motion planning for a nonholonomic mobile robot on a barcode map, ***IEEE International Conference on Robotics and Biomimetics***, pp. 215-220, 2017. [[paper](https://ieeexplore.ieee.org/document/8324420)]
++ [21]  J. Wen, X. Zhang\*, **H. Gao**, J. Yuan, and Y. Fang. A novel 2D laser scan matching algorithm for mobile robots based on hybrid features, ***IEEE International Conference on Real-time Computing and Robotics***, pp. 366-371, 2018. (**Finalist for the Best Paper Award**) [[paper](https://ieeexplore.ieee.org/document/8621744)]
+
++ [22] J. Wang, X. Zhang\*, **H. Gao**, and Y. Fang. Time-optimal motion planning for a nonholonomic mobile robot on a barcode map, ***IEEE International Conference on Robotics and Biomimetics***, pp. 215-220, 2017. [[paper](https://ieeexplore.ieee.org/document/8324420)]
 
 + ...
 
@@ -100,25 +102,24 @@ From July 2020 to July 2021, I worked as a **Senior Algorithm Engineer** in **IA
 
 ### Reviewer
 
++ IEEE Transactions on Industrial Electronics
 + IEEE Transactions on Automation Science and Engineering
-
 + IEEE/ASME Transactions on Mechatronics
-
++ IEEE Transactions on Vehicular Technology
++ IEEE Transactions on Control Systems Technology
 + IEEE Transactions on Industrial Informatics
-
 + IEEE Transactions on Instrumentation and Measurement
-
-+ IEEE Robotics and Automation Letters
-
 + IEEE Transactions on Intelligent Vehicles
-
 + IEEE Transactions on Intelligent Transportation Systems
-
++ Biomimetic Intelligence and Robotics
++ IEEE Robotics and Automation Letters
++ Artificial Intelligence Review
 + IEEE Sensors Journal
-
++ Robotics and Autonomous Systems
 + International Journal of Advanced Robotic Systems
-
-+ ...
++ International Journal of Intelligent Robotics and Applications
++ IEEE/RSJ IROS/IEEE ICRA
++ .....
 
 
 
