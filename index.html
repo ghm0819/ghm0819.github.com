@@ -150,9 +150,23 @@
 
         /* Main Content */
         main {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 50px 30px;
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Two Column Layout */
+        .left-column {
+            flex: 0 0 42%;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+
+        .right-column {
+            flex: 1;
         }
 
         section {
@@ -200,6 +214,48 @@
 
         .biography-content a:hover {
             border-bottom-style: solid;
+        }
+
+        /* Contact Info in Left Column */
+        .contact-info {
+            background: white;
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .contact-info h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .contact-item i {
+            color: var(--secondary-color);
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--secondary-color);
         }
 
         /* Grants Section */
@@ -449,6 +505,22 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 992px) {
+            main {
+                flex-direction: column;
+            }
+
+            .left-column {
+                flex: none;
+                position: static;
+                width: 100%;
+            }
+
+            .right-column {
+                width: 100%;
+            }
+        }
+
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -541,40 +613,74 @@
             <li><a href="#grants">Grants</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#awards">Awards</a></li>
-            <li><a href="#reviewer">Reviewer</a></li>
+            <li><a href="#reviewer">Services</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Biography Section -->
-        <section id="biography">
-            <h2><i class="fas fa-user"></i> Biography</h2>
-            <div class="biography-content">
-                <p>
-                    I received the <strong>B.S. degree</strong> in mechanical engineering and automation from <strong>Hohai University</strong> in 2015, and the <strong>Ph.D. degree</strong> in control science and engineering from <a href="https://rh.nankai.edu.cn/" target="_blank"><strong>RaHAIC</strong></a> (Robot Autonomy and Human-AI Collaboration), the Institute of Robotics and Automatic Information System, <strong>Nankai University</strong> in 2020, supervised by <a href="https://ai.nankai.edu.cn/info/1033/3984.htm" target="_blank"><strong>Prof. Xuebo Zhang</strong></a>. My research interest includes <strong>localization</strong> and <strong>mapping</strong> for <strong>mobile robots</strong>.
-                </p>
-                <p>
-                    From July 2020 to July 2021, I worked as a <strong>Senior Algorithm Engineer</strong> in <strong>IAS BU</strong> (Huawei Intelligent Automotive Solution), with research interests including <strong>freespace extraction</strong>, <strong>APA</strong> (Auto Parking Assist), and <strong>AVP</strong> (Automated Valet Parking). From July 2021 to February 2025, I was a research scientist (Associate Professor) at Zhejiang Lab. Currently, I am a Principal Investigator at the Hangzhou Global Innovation and Technology Center of Zhejiang University (ZJU-HIC). My research interests include <strong>localization</strong> and <strong>perception</strong> for <strong>intelligent vehicles</strong> and <strong>mobile robots</strong>.
-                </p>
-            </div>
-        </section>
+        <!-- Left Column: Biography & Contact -->
+        <div class="left-column">
+            <!-- Biography Section -->
+            <section id="biography">
+                <h2><i class="fas fa-user"></i> Biography</h2>
+                <div class="biography-content">
+                    <p>
+                        I received the <strong>B.S. degree</strong> in mechanical engineering and automation from <strong>Hohai University</strong> in 2015, and the <strong>Ph.D. degree</strong> in control science and engineering from <a href="https://rh.nankai.edu.cn/" target="_blank"><strong>RaHAIC</strong></a> (Robot Autonomy and Human-AI Collaboration), the Institute of Robotics and Automatic Information System, <strong>Nankai University</strong> in 2020, supervised by <a href="https://ai.nankai.edu.cn/info/1033/3984.htm" target="_blank"><strong>Prof. Xuebo Zhang</strong></a>. My research interest includes <strong>localization</strong> and <strong>mapping</strong> for <strong>mobile robots</strong>.
+                    </p>
+                    <p>
+                        From July 2020 to July 2021, I worked as a <strong>Senior Algorithm Engineer</strong> in <strong>IAS BU</strong> (Huawei Intelligent Automotive Solution), with research interests including <strong>freespace extraction</strong>, <strong>APA</strong> (Auto Parking Assist), and <strong>AVP</strong> (Automated Valet Parking). From July 2021 to February 2025, I was a research scientist (Associate Professor) at Zhejiang Lab. Currently, I am a Principal Investigator at the Hangzhou Global Innovation and Technology Center of Zhejiang University (ZJU-HIC). My research interests include <strong>localization</strong> and <strong>perception</strong> for <strong>intelligent vehicles</strong> and <strong>mobile robots</strong>.
+                    </p>
+                </div>
+            </section>
 
-        <!-- Grants Section -->
-        <section id="grants">
-            <h2><i class="fas fa-award"></i> Selected Grants</h2>
-            <div class="grant-item">
-                <span class="grant-period">2024.01 - 2026.12</span>
-                <div class="grant-title">
-                    Self-organizing Spatio-temporal Scene Graph Construction Towards Global Localization of Mobile Robots under Dynamic and Ambiguous Environments
-                    <span class="grant-role">PI</span>
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3><i class="fas fa-address-card"></i> Contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-building"></i>
+                    <span>ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University (ZJU-HIC)</span>
                 </div>
-                <div class="grant-number">Grant No: 62303428</div>
-                <div style="margin-top: 8px; color: #7f8c8d; font-size: 0.9em;">
-                    <i class="fas fa-university"></i> National Natural Science Foundation of China
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hangzhou, China</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:ghm@zju.edu.cn">Email</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="http://github.com/ghm0819" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="https://scholar.google.com.hk/citations?user=Vz_6DDwAAAAJ&hl=zh-CN&oi=ao" target="_blank">Google Scholar</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-researchgate"></i>
+                    <a href="https://www.researchgate.net/profile/Haiming-Gao-2" target="_blank">ResearchGate</a>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Right Column: Grants, Publications, Awards, Reviewer -->
+        <div class="right-column">
+            <!-- Grants Section -->
+            <section id="grants">
+                <h2><i class="fas fa-award"></i> Selected Grants</h2>
+                <div class="grant-item">
+                    <span class="grant-period">2024.01 - 2026.12</span>
+                    <div class="grant-title">
+                        Self-organizing Spatio-temporal Scene Graph Construction Towards Global Localization of Mobile Robots under Dynamic and Ambiguous Environments
+                        <span class="grant-role">PI</span>
+                    </div>
+                    <div class="grant-number">Grant No: 62303428</div>
+                    <div style="margin-top: 8px; color: #7f8c8d; font-size: 0.9em;">
+                        <i class="fas fa-university"></i> National Natural Science Foundation of China
+                    </div>
+                </div>
+            </section>
 
         <!-- Publications Section -->
         <section id="publications">
@@ -610,10 +716,9 @@
                     <a href="https://ieeexplore.ieee.org/document/10287883" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
                     <a href="https://github.com/ghm0819/cvr_lse" target="_blank"><i class="fab fa-github"></i> Code</a>
                 </div>
-                <!-- Space for image -->
-                <!--div class="pub-image" style="background: #f0f0f0; padding: 40px; border: 2px dashed #ccc;">
-                    <em style="color: #999;">[Image/Video Placeholder]</em>
-                </div-->
+                <div class="pub-image">
+                    <img src="./pic/paper/CVR_LSE.png" alt="CVR-LSE" style="max-width: 600px;">
+                </div>
             </div>
 
             <div class="publication-item">
@@ -626,6 +731,9 @@
                 </div>
                 <div class="pub-links">
                     <a href="https://ieeexplore.ieee.org/document/10024765" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                </div>
+                <div class="pub-image">
+                    <img src="./pic/paper/NEGL.png" alt="NEGL" style="max-width: 600px;">
                 </div>
             </div>
 
@@ -641,6 +749,9 @@
                     <a href="https://ieeexplore.ieee.org/document/8621041" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
                     <a href="https://www.youtube.com/watch?v=0MTvEsSSSz4" target="_blank"><i class="fab fa-youtube"></i> Video</a>
                 </div>
+                <div class="pub-image">
+                    <img src="./pic/paper/SUES.png" alt="SUES" style="max-width: 600px;">
+                </div>
             </div>
 
             <div class="publication-item">
@@ -654,6 +765,9 @@
                 <div class="pub-links">
                     <a href="https://ieeexplore.ieee.org/document/8573855" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
                     <a href="https://www.youtube.com/watch?v=D2Ds_DYySRE" target="_blank"><i class="fab fa-youtube"></i> Video</a>
+                </div>
+                <div class="pub-image">
+                    <img src="./pic/paper/AUTO.png" alt="AUTO" style="max-width: 600px;">
                 </div>
             </div>
 
@@ -970,35 +1084,41 @@
         </section>
 
         <!-- Reviewer Section -->
-        <section id="reviewer">
-            <h2><i class="fas fa-edit"></i> Reviewer Service</h2>
-            <div class="reviewer-container">
-                <h3>Journal Reviews</h3>
-                <div class="journal-tags">
-                    <span class="journal-tag">IEEE Transactions on Industrial Electronics</span>
-                    <span class="journal-tag">IEEE Transactions on Automation Science and Engineering</span>
-                    <span class="journal-tag">IEEE/ASME Transactions on Mechatronics</span>
-                    <span class="journal-tag">IEEE Transactions on Vehicular Technology</span>
-                    <span class="journal-tag">IEEE Transactions on Control Systems Technology</span>
-                    <span class="journal-tag">IEEE Transactions on Industrial Informatics</span>
-                    <span class="journal-tag">IEEE Transactions on Instrumentation and Measurement</span>
-                    <span class="journal-tag">IEEE Transactions on Intelligent Vehicles</span>
-                    <span class="journal-tag">IEEE Transactions on Intelligent Transportation Systems</span>
-                    <span class="journal-tag">Biomimetic Intelligence and Robotics</span>
-                    <span class="journal-tag">IEEE Robotics and Automation Letters</span>
-                    <span class="journal-tag">Artificial Intelligence Review</span>
-                    <span class="journal-tag">IEEE Sensors Journal</span>
-                    <span class="journal-tag">Robotics and Autonomous Systems</span>
-                    <span class="journal-tag">International Journal of Advanced Robotic Systems</span>
-                    <span class="journal-tag">International Journal of Intelligent Robotics and Applications</span>
+            <section id="reviewer">
+                <h2><i class="fas fa-edit"></i> Academic Services</h2>
+                <div class="reviewer-container">
+                    <h3>Junior Editorial Board Member</h3>
+                    <div class="journal-tags">
+                        <span class="journal-tag" style="background: #27ae60; color: white; border-color: #27ae60;">Biomimetic Intelligence and Robotics (JCR Q1)</span>
+                        <span class="journal-tag" style="background: #3498db; color: white; border-color: #3498db;">Intelligence & Robotics (JCR Q2)</span>
+                    </div>
+                    <h3>Journal Reviews</h3>
+                    <div class="journal-tags">
+                        <span class="journal-tag">IEEE Transactions on Industrial Electronics</span>
+                        <span class="journal-tag">IEEE Transactions on Automation Science and Engineering</span>
+                        <span class="journal-tag">IEEE/ASME Transactions on Mechatronics</span>
+                        <span class="journal-tag">IEEE Transactions on Vehicular Technology</span>
+                        <span class="journal-tag">IEEE Transactions on Control Systems Technology</span>
+                        <span class="journal-tag">IEEE Transactions on Industrial Informatics</span>
+                        <span class="journal-tag">IEEE Transactions on Instrumentation and Measurement</span>
+                        <span class="journal-tag">IEEE Transactions on Intelligent Vehicles</span>
+                        <span class="journal-tag">IEEE Transactions on Intelligent Transportation Systems</span>
+                        <span class="journal-tag">Biomimetic Intelligence and Robotics</span>
+                        <span class="journal-tag">IEEE Robotics and Automation Letters</span>
+                        <span class="journal-tag">Artificial Intelligence Review</span>
+                        <span class="journal-tag">IEEE Sensors Journal</span>
+                        <span class="journal-tag">Robotics and Autonomous Systems</span>
+                        <span class="journal-tag">International Journal of Advanced Robotic Systems</span>
+                        <span class="journal-tag">International Journal of Intelligent Robotics and Applications</span>
+                    </div>
+                    <h3>Conference Reviews</h3>
+                    <div class="journal-tags">
+                        <span class="journal-tag">IEEE/RSJ IROS</span>
+                        <span class="journal-tag">IEEE ICRA</span>
+                    </div>
                 </div>
-                <h3>Conference Reviews</h3>
-                <div class="journal-tags">
-                    <span class="journal-tag">IEEE/RSJ IROS</span>
-                    <span class="journal-tag">IEEE ICRA</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
